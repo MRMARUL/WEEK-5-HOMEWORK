@@ -257,6 +257,9 @@ ul {
   box-shadow: 0 4px 4 0 #000 15%;
   margin-top: 16px;
 }
+.email:focus {
+  background-color: #2e2f42;
+}
 .sub-btn {
   width: 165px;
   height: 40px;
@@ -274,7 +277,7 @@ ul {
 .modal-div {
   height: 1158px;
   width: 1158px;
-
+  display: none;
   background-color: rgba(46, 47, 66, 0.7);
   z-index: 3;
   position: fixed;
@@ -293,6 +296,7 @@ ul {
 .modal-input {
   outline: none;
   padding: 4px;
+  padding-left: 40px;
   border: 1px solid rgba(46, 47, 66, 0.7);
   border-radius: 4px;
   height: 40px;
@@ -300,6 +304,7 @@ ul {
 }
 .modal-input:focus {
   border-color: #4d5ae5;
+  background-color: #fcfcfc;
 }
 .form-label {
   color: rgba(46, 47, 66, 0.7);
@@ -318,10 +323,14 @@ ul {
 }
 .modal-textarea {
   border-radius: 4px;
-  color: #000;
   resize: none;
+  outline: none;
   background-color: #fcfcfc;
   margin-bottom: 16px;
+}
+.modal-textarea:focus {
+  border-color: #4d5ae5;
+  background-color: #fcfcfc;
 }
 #modal-open:checked .modal {
   display: block;
@@ -338,6 +347,10 @@ ul {
   border: 0px;
   margin-left: 91px;
   margin-top: 24px;
+}
+.modal-send:hover,
+:focus {
+  background-color: #3c45b1;
 }
 .modal p {
   font-weight: 500;
@@ -368,7 +381,7 @@ ul {
   stroke: #2e2f42;
   position: absolute;
   margin-top: 23px;
-  margin-left: 19px;
+  margin-left: 15px;
 }
 .icon-sub {
   width: 24px;
@@ -376,4 +389,7 @@ ul {
   position: absolute;
   margin-top: 0px;
   margin-left: 16px;
+}
+.modal-div:target {
+  display: flex;
 }
