@@ -1,5 +1,5 @@
 body {
-  font-family: "Roboto" sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: bold;
   font-size: 16px;
   font-weight: 400;
@@ -63,6 +63,9 @@ ul {
   color: #ffffff;
   background-color: #4d5ae5;
   margin-top: 32px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button1:hover {
   text-align: center;
@@ -98,6 +101,9 @@ nav ul li a {
   letter-spacing: 2%;
   cursor: pointer;
   transition: transition-duration 250ms, cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 nav ul li a:focus,
 nav ul li a:hover {
@@ -129,9 +135,15 @@ nav ul li a:hover {
   letter-spacing: 3%;
   color: #2e2f42;
 }
+main {
+  width: 1158px;
+  margin: 0 auto;
+}
 footer {
   background-color: #2e2f42;
   padding-left: 120px;
+  width: 1158px;
+  margin: 0 auto;
 }
 footer p {
   color: #f4f4fd;
@@ -147,8 +159,8 @@ footer .webstudio-studio {
 }
 
 .container {
-  width: 1158px;
-  margin: 0 auto;
+  width: auto;
+  height: auto;
 }
 section {
   padding: 120px 0;
@@ -158,6 +170,8 @@ header {
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #e7e9fc;
+  width: 1158px;
+  margin: 0 auto;
 }
 nav {
   display: flex;
@@ -183,6 +197,9 @@ nav {
 }
 .our-portfolio ul li {
   border: 1px solid #e7e9fc;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .our-portfolio ul li:hover,
 .our-portfolio ul li:focus {
@@ -208,6 +225,9 @@ ul {
   align-items: center;
   box-shadow: 0;
   padding: 7px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon:hover {
   background-color: #272f81;
@@ -269,22 +289,26 @@ ul {
   color: #fff;
   margin-top: 16px;
   padding-right: 30px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .sub-btn:hover,
 :focus {
   background-color: #3c45b1;
 }
 .modal-div {
-  height: 1158px;
-  width: 1158px;
+  height: 1080px;
+  width: 1920px;
+  max-width: 1920px;
+  max-height: 1080px;
   display: none;
   background-color: rgba(46, 47, 66, 0.7);
   z-index: 3;
   position: fixed;
+  padding: 10% 40%;
 }
 .modal {
-  margin-left: 375px;
-  margin-top: 80px;
   width: 408px;
   height: 584px;
   background-color: white;
@@ -301,6 +325,9 @@ ul {
   border-radius: 4px;
   height: 40px;
   background-color: #fcfcfc;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-input:focus {
   border-color: #4d5ae5;
@@ -327,6 +354,9 @@ ul {
   outline: none;
   background-color: #fcfcfc;
   margin-bottom: 16px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-textarea:focus {
   border-color: #4d5ae5;
@@ -347,6 +377,9 @@ ul {
   border: 0px;
   margin-left: 91px;
   margin-top: 24px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-send:hover,
 :focus {
@@ -360,7 +393,6 @@ ul {
   width: 12px;
   height: 12px;
   fill: #2e2f42;
-  stroke: #2e2f42;
   position: absolute;
   margin-top: 28px;
   margin-left: 19px;
@@ -369,7 +401,6 @@ ul {
   width: 13px;
   height: 13px;
   fill: #2e2f42;
-  stroke: #2e2f42;
   position: absolute;
   margin-top: 28px;
   margin-left: 19px;
@@ -378,7 +409,6 @@ ul {
   width: 19px;
   height: 20px;
   fill: #2e2f42;
-  stroke: #2e2f42;
   position: absolute;
   margin-top: 23px;
   margin-left: 15px;
