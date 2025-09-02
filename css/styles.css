@@ -340,6 +340,15 @@ ul {
   transition: color 150ms ease-in-out;
   margin-top: 26px;
 }
+.form-label:has(.modal-input:focus) .modal-icon1 {
+  color: #4d5ae5;
+}
+.form-label:has(.modal-input:focus) .modal-icon2 {
+  color: #4d5ae5;
+}
+.form-label:has(.modal-input:focus) .modal-icon3 {
+  color: #4d5ae5;
+}
 .close-btn {
   width: 24px;
   height: 24px;
@@ -392,7 +401,7 @@ ul {
 .modal-icon1 {
   width: 12px;
   height: 12px;
-  fill: #2e2f42;
+  color: #2e2f42;
   position: absolute;
   margin-top: 28px;
   margin-left: 19px;
@@ -400,7 +409,7 @@ ul {
 .modal-icon2 {
   width: 13px;
   height: 13px;
-  fill: #2e2f42;
+  color: #2e2f42;
   position: absolute;
   margin-top: 28px;
   margin-left: 19px;
@@ -408,7 +417,7 @@ ul {
 .modal-icon3 {
   width: 19px;
   height: 20px;
-  fill: #2e2f42;
+  color: #2e2f42;
   position: absolute;
   margin-top: 23px;
   margin-left: 15px;
