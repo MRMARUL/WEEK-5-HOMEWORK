@@ -300,8 +300,6 @@ ul {
 .modal-div {
   height: 100%;
   width: 100%;
-  max-width: 1920px;
-  max-height: 1080px;
   display: none;
   background-color: rgba(46, 47, 66, 0.7);
   z-index: 3;
